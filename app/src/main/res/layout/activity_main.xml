@@ -1,19 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.meng.android_firstapp.MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <include layout="@layout/title_layout"></include>
 
-</android.support.constraint.ConstraintLayout>
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+      >
+
+        <RelativeLayout
+            android:id="@+id/homelayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/homeimg"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                app:srcCompat="@drawable/tabbar_icon0_pressed"/>
+
+            <TextView
+                android:id="@+id/hometext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="首页"
+                android:textSize="@dimen/S1"
+                android:textAlignment="center"
+                android:textColor="@color/C1"
+                android:layout_below="@+id/homeimg"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dynamiclayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/dynamicimg"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                app:srcCompat="@drawable/tabbar_icon1_normal"/>
+
+            <TextView
+                android:id="@+id/dynamictext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发现"
+                android:textSize="@dimen/S1"
+                android:textAlignment="center"
+                android:textColor="@color/C3"
+                android:layout_below="@+id/dynamicimg"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/discoverlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/discoverimg"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                app:srcCompat="@drawable/tabbar_icon2_normal"/>
+
+            <TextView
+                android:id="@+id/discovertext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发现"
+                android:textSize="@dimen/S1"
+                android:textAlignment="center"
+                android:textColor="@color/C3"
+                android:layout_below="@+id/discoverimg"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/messagelayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/messageimg"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                app:srcCompat="@drawable/tabbar_icon3_normal"/>
+
+            <TextView
+                android:id="@+id/messagetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="消息"
+                android:textSize="@dimen/S1"
+                android:textAlignment="center"
+                android:textColor="@color/C3"
+                android:layout_below="@+id/messageimg"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/minelayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/mineimg"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                app:srcCompat="@drawable/tabbar_icon4_normal"/>
+
+            <TextView
+                android:id="@+id/minetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我的"
+                android:textSize="@dimen/S1"
+                android:textAlignment="center"
+                android:textColor="@color/C3"
+                android:layout_below="@+id/mineimg"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
