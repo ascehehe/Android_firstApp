@@ -1,6 +1,5 @@
 package com.example.meng.android_firstapp;
 
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.meng.android_firstapp.manhua.HomeFragment;
 
 import java.util.Arrays;
 import java.util.List;
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         initView();
         refreshItem(0);
+
 
 
     }

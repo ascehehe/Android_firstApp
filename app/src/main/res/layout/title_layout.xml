@@ -9,10 +9,13 @@
         android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
         android:visibility="invisible"
-        android:background="@drawable/navbar_icon_back"/>
+        android:background="@drawable/navbar_icon_back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:minHeight="0dp"
+        android:minWidth="0dp"/>
 
     <TextView android:textSize="@dimen/S8"
               android:textColor="@color/C1"

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="280dp">
+
+    <TextView
+        android:id="@+id/title_manhua_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/C1"
+        android:textSize="@dimen/S4"
+        android:layout_marginTop="15dp"
+        android:text="分类"/>
+
+    <TextView
+        android:id="@+id/type_manhua_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/title_manhua_item"
+        android:textColor="@color/C3"
+        android:textSize="@dimen/S4"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/title_manhua_item"
+        android:layout_toRightOf="@+id/title_manhua_item"
+        android:text="标题"/>
+
+    <ImageView
+        android:id="@+id/imageView_manhua_item"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/photo_default"
+        android:layout_below="@+id/title_manhua_item"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/chapter_manhua_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_manhua_item"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/C1"
+        android:textSize="@dimen/S3"
+        android:layout_alignLeft="@id/title_manhua_item"
+        android:text="第0话"/>
+
+    <TextView
+        android:id="@+id/num_manhua_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chapter_manhua_item"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/C3"
+        android:textSize="@dimen/S3"
+
+        android:layout_marginRight="13dp"
+        android:text="0"/>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+              android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/summary_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/photo_default"/>
+
+    <TextView
+        android:id="@+id/summary_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/summary_photo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/S4"
+        android:textColor="@color/C1"
+        android:layout_toEndOf="@+id/summary_photo"
+        android:layout_toRightOf="@+id/summary_photo"
+        android:text="标题"/>
+
+    <TextView
+        android:id="@+id/summary_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/summary_photo"
+        android:layout_alignLeft="@+id/summary_title"
+        android:layout_alignStart="@+id/summary_title"
+        android:textSize="@dimen/S4"
+        android:textColor="@color/C3"
+        android:text="时间"/>
+
+    <TextView
+        android:id="@+id/summary_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/summary_title"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="@dimen/S4"
+        android:textColor="@color/C3"
+        android:text="人数"/>
+</RelativeLayout>
