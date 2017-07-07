@@ -1,4 +1,4 @@
-package Network;
+package Network.manhua;
 
 /**
  * Created by meng on 2017/7/3.

@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.meng.android_firstapp.manhua.HomeFragment;
+import com.example.meng.android_firstapp.weather.DynamicFragment;
 
 import java.util.Arrays;
 import java.util.List;

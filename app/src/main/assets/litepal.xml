@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="cool_weather"></dbname>
+
+    <version value="1"></version>
+    <list>
+        <mapping class="Modle.weather.City"/>
+        <mapping class="Modle.weather.County"/>
+        <mapping class="Modle.weather.Province"/>
+
+    </list>
+</litepal>

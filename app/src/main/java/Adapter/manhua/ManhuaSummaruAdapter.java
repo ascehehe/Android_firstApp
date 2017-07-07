@@ -1,4 +1,4 @@
-package Adapter;
+package Adapter.manhua;
 
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -10,14 +10,12 @@ import android.widget.TextView;
 
 import com.example.meng.android_firstapp.R;
 import com.example.meng.android_firstapp.manhua.ManhuaDetailActivity;
-import com.example.meng.android_firstapp.manhua.ManhuaSummaryActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import Modle.Manhua;
-import Modle.ManhuaSummaryResponse;
+import Modle.manhua.ManhuaSummaryResponse;
 import Utils.MyApplication;
 
 /**

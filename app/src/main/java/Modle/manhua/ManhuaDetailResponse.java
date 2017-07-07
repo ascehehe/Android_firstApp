@@ -1,4 +1,4 @@
-package Modle;
+package Modle.manhua;
 
 import java.util.List;
 

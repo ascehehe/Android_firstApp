@@ -7,7 +7,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,10 +18,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import Adapter.ManhuaAdapter;
-import Modle.Manhua;
-import Modle.WeekResponse;
-import Network.APIClient;
+import Adapter.manhua.ManhuaAdapter;
+import Modle.manhua.Manhua;
+import Modle.manhua.WeekResponse;
+import Network.manhua.APIClient;
 
 /**
  * Created by meng on 2017/7/3.
@@ -76,7 +75,7 @@ public class HomeFragment extends Fragment {
 
             @Override
             public void run() {
-                String str="week_list&page=1&pageSize=50&dates=6";
+                String str="week_list&page=1&pageSize=50&dates=4";
                 APIClient client=new APIClient();
                 String result= null;
                 try {

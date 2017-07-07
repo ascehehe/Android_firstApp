@@ -1,4 +1,4 @@
-package Adapter;
+package Adapter.manhua;
 
 import android.content.Context;
 import android.support.annotation.LayoutRes;

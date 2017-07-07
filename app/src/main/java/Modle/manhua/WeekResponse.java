@@ -1,4 +1,4 @@
-package Modle;
+package Modle.manhua;
 
 import com.google.gson.annotations.SerializedName;
 

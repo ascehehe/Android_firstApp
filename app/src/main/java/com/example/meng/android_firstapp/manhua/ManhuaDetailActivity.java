@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
@@ -18,12 +17,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import Adapter.ManhuaDetailAdpter;
-import Modle.Manhua;
-import Modle.ManhuaDetailResponse;
-import Modle.ManhuaSummaryResponse;
-import Modle.WeekResponse;
-import Network.APIClient;
+import Adapter.manhua.ManhuaDetailAdpter;
+import Modle.manhua.ManhuaDetailResponse;
+import Modle.manhua.ManhuaSummaryResponse;
+import Network.manhua.APIClient;
 
 /**
  * Created by meng on 2017/7/5.
