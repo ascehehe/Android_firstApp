@@ -5,8 +5,6 @@
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
     android:layout_margin="7dp"
-    care_view:cardElevation="2dp"
-    care_view:cardCornerRadius="2dp"
     android:clickable="true">
     <RelativeLayout
         android:layout_width="match_parent"
